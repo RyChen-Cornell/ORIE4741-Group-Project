@@ -1,2 +1,2 @@
 # ORIE4741-Group-Project
-### Group Member: Ruoyu Chen(rc855)
+Haozhe Wang(), Xia Wang(), Ruoyu Chen(rc855)
