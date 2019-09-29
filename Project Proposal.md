@@ -9,7 +9,7 @@ In this project, we would like to leverage our knowledge in dealing with big mes
 More specifically, we plan to answer the question “how do we predict the future stock price based off the quarterly financial statements and how long the prediction would stay effective”. Parameters from the financial statements which will be used are: earning per share (EPS), book value per share (BPS), and net profit growth rate (NPGR), as those parameters are closely related to the change of the stock price. 
 
 ## Data
-The scope of the project is limited to the quarterly financial statements and stock prices from year 2009 to present of the S&P 500 companies. The quarterly financial statements used for this project will be extracted from SEC’s database system EDGAR and the historical stock prices will be extracted from Yahoo Finance or Bloomberg.
+The scope of the project is limited to the quarterly financial statements of S&P 500 companies and their stock prices from year 2009 to the present. The quarterly financial statements used for this project will be extracted from SEC’s database system EDGAR and the historical stock prices will be extracted from Yahoo Finance or Bloomberg.
 
 ## Methods
 In this project, we will use the following machine learning techniques: 
