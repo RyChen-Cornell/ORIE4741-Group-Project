@@ -59,7 +59,7 @@ From the above correlation matrix, we found that the correlation between EPS and
 As a preliminary analysis, we used the dataset to fit an SVM with Sklearn to do classification. And we are surpriced to find out that the accuracy of the model is over 90% as shown on the graph above. To be more specific, we constructed the confusion matrix and the number on the diagonal added to be close to the size of the data from which we can conclude that we did a fairly good classification. 
 
 #### Feature Selection and Feature Engineering
-Upon now, we have just chosen 7 features to be included in our model among over 100 indicators, so in our further analysis, We might use feature selection methods in regression (AIC, BIC or Forward/Backward selection) to find the other feasible features to build the final model. Besides, we 
+Upon now, we have just chosen 7 features to be included in our model among over 100 indicators, so in our further analysis, We might use feature selection methods in regression (AIC, BIC or Forward/Backward selection) to find the other feasible features to build the final model. Besides, we may add monthly stock trends instead of quarterly monthly trends which we have currently.
 
 #### Train and Test
-We will split our dataset into train set and test set according to the “80-20 rule”. Specifically, we will shuffle the dataset, and 
+We will split our dataset into train set and test set according to the “80-20 rule”. Specifically, we will shuffle the dataset, and use the training set to determine our model. We will then use this model on test set to see whether this model would perform well on new data.
