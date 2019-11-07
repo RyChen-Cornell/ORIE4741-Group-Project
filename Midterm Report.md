@@ -18,6 +18,8 @@ The data set contains 111 columns of key financial indicators. We will discuss w
 #### Data Cleaning Procedure
 ##### Missing Values
 Since we noticed that around 10 companies were founded after Year 2014, we decided to remove those companies from our analysis scope. After running the API script, we have noticed that 10 companies are corrupted and have only returned a few lines of data. Those companies are excluded from the dataset as well, with tickers: AMCR, BF.B, BRK.B, CPRI, GL, LHX, LIN, LW, EVRG, CDW. We believe removing those companies will not have a significant impact on our trend analysis. 
+##### Target Transformation
+Since we want to predict the trends of stock price after the release of the financial statement report, we create a target variable which records whether the stock price goes up or down in next quarter. We assign true (1) to goes up and false (0) to goes down.
 
 ## Features Description
 #### Earnings per Share.
@@ -48,9 +50,9 @@ From the above correlation matrix, we found that the correlation between EPS and
 ## Preliminary Analysis and Future Development
 #### SVM 
 <img src="https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/SVM.png" width = "1000">
-
-#### Feature Selection
-We might use feature selection methods in regression (AIC, BIC or Forward/Backward selection) to find the best features to build the final model.
+As a preliminary analysis, we used the dataset to fit an SVM with Sklearn to do classification. And we are surpriced to find out that the accuracy of the model is over 90% as shown on the graph above. To be more specific, we constructed the confusion matrix and the number on the diagonal added to be close to the size of the data from which we can conclude that we did a fairly good classification. 
+#### Feature Selection and Feature Engineering
+Upon now, we have just chosen 7 features to be included in our model among over 100 indicators, so in our further analysis, We might use feature selection methods in regression (AIC, BIC or Forward/Backward selection) to find the other feasible features to build the final model. Besides, we 
 
 #### Train and Test
 We will split our dataset into train set and test set according to the “80-20 rule”. Specifically, we will shuffle the dataset, and 
