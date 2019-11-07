@@ -25,20 +25,26 @@ Since we want to predict the trends of stock price after the release of the fina
 #### Earnings per Share.
 EPS(Earnings per Share) is one of the most important indicators traders and investors may use while examining the financial strength of companies. A high EPS generally means the company is profitable enough to pay out more money to its investors which essentially increases the intrinsic value of the stock of the company. 
 EPS = net Income - preferred dividend / average outstanding common shares.
+
 #### Net Profit Growth Rate
 NPGR indicates how strong the growth of the company may be in the future, which is often used by investors to predict the future financial performance of the company and make long/short decisions.
 NPGR = (Net Profit_current - Net Profit_previous) / Net Profit_previous 
+
 #### Book To Market
 BTM (Book to Market) Ratio indicates whether the stock price of the company is overpriced or underpriced which is widely used by investors to determine 
 Book to Market = Common Shareholders’ Equity / Market Cap
+
 #### Net Profit Margin
 Net profit margin = Net profit ÷ Net sales or revenues
+
 #### Equity Multiplier
 Equity Multiplier is a financial leverage ratio that evaluates a company’s efficiency in the usage of debt to purchase assets. 
 Equity Multiplier = Total Assets / Stockholder’s Equity
+
 #### return on equity (ROE)
 Return on equity is a profitability ratio that measures the ability of a firm to generate profits from its shareholders investments in the company. It shows how much profit each dollar of common stockholder’s equity generates. 
 ROE = Net Income / Shareholder’s Equity
+
 #### Free Cash Flow to Equity (FCFE)
 FCFE = Net Income - (Capital Expenditures - Depreciation) - (Change in Non-cash Working Capital) -(Preferred Dividends + New Preferred Stock Issued) + (New Debt Issued - Debt Repayments)
 
@@ -51,6 +57,7 @@ From the above correlation matrix, we found that the correlation between EPS and
 #### SVM 
 <img src="https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/SVM.png" width = "1000">
 As a preliminary analysis, we used the dataset to fit an SVM with Sklearn to do classification. And we are surpriced to find out that the accuracy of the model is over 90% as shown on the graph above. To be more specific, we constructed the confusion matrix and the number on the diagonal added to be close to the size of the data from which we can conclude that we did a fairly good classification. 
+
 #### Feature Selection and Feature Engineering
 Upon now, we have just chosen 7 features to be included in our model among over 100 indicators, so in our further analysis, We might use feature selection methods in regression (AIC, BIC or Forward/Backward selection) to find the other feasible features to build the final model. Besides, we 
 
