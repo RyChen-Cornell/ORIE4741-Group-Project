@@ -42,9 +42,13 @@ FCFE = Net Income - (Capital Expenditures - Depreciation) - (Change in Non-cash 
 
 #### Features Correlation Analysis
 <img src= "https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/features%20correlation.png" width="350">
-From the above correlation matrix, we 
 
-## Future Development
+From the above correlation matrix, we found that the correlation between EPS and Equity Multiplier is significant, thus we need to consider dropping one of the features or make some adjustment in our further analysis. Apart from this pair, other correlations are not significant.
+
+## Preliminary Analysis and Future Development
+#### SVM 
+<img src="https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/SVM.png" width = "1000">
+
 #### Feature Selection
 We might use feature selection methods in regression (AIC, BIC or Forward/Backward selection) to find the best features to build the final model.
 
