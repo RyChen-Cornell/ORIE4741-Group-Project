@@ -106,15 +106,7 @@ Besides, as shown in the confusing matrix, we were predicting nearly 95% of the 
 
 We tried different models to fit our data including random forest; logistic regression; Neural Network; AdaBoost and, XGBoost. The train accuracy, test accuracy and the F1 score are summarized below. F1 score, which takes value from 0 to 1,is used to measure the performance of a classification model (reference: [https://en.wikipedia.org/wiki/F1\_score](https://en.wikipedia.org/wiki/F1_score)). The larger the F1 score, the better the model.
 
-|   | Train accuracy  | Test Accuracy | F1 Score |
-| --- | --- | --- | --- |
-| Linear SVM | 60.98% | 60.48% | 0.7423 |
-| Non-Linear SVM | 61.48% | 60.28% | 0.7408 |
-| Random Forest | 57.59% | 55.68% | 0.6322 |
-| Logistic Regression | 60.97% | 60.38% | 0.7415 |
-| Neural Network | 61.84% | 60.28% | 0.7379 |
-| Ada Boost | 71.56% | 57.05% | 0.6873 |
-| XG Boost | 63.04% | 59.30% | 0.7333 |
+<img src= "https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/final%20report%20img/table_prev.png" width = "350">
 
 Here, we would like to explain the basic concept and mechanism of AdaBoost and XGBoost as they have not been taught in the class. The general idea of boosting algorithm is that the model trains a series of weak models, each trying to correct its predecessor, and the produce a strong model in the end. AdaBoost (Adaptive Boosting) trains a decision tree each time and assign more weight for those incorrectly classified points before training the new tree. XGBoost (eXtreme Gradient Boosting) implements gradient boosted decision trees designed for speed and performance. Gradient Boosting tries to fit the new tree to the residual errors made by the previous tree. XGBoost provides optimization to decrease the computational time since gradient boosting is usually slow.
 
