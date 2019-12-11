@@ -62,9 +62,9 @@ Since we noticed that around 10 companies were founded after Year 2014, we decid
 
 Since we want to predict the trends of stock price after the release of the financial statement report, we create a target variable which records whether the stock price goes up or down in next quarter after the financial statement was disclosed. We assign true (1) to price going up and false (-1) to going down or staying the same.
 
-Preliminary Analysis
+# Preliminary Analysis
 
-Feature Selection
+### Feature Selection
 
 <img src= "https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/final%20report%20img/correlation1.png" width = "350">
 
@@ -74,11 +74,11 @@ in valuing the stock of companies, including profitability, sustainability, liqu
 
 From the above correlation matrix, we found that the correlation between EPS and Equity Multiplier is significant, thus we need to consider dropping one of the features or make some adjustment in our further analysis. Apart from this pair, other correlations are not significant.
 
-Feature Transformation
+### Feature Transformation
 
 Considering the facts that different companies have different sizes and companies in different industry sector have different benchmarks in terms of financial statement indicators, we normalized each column in the data: for each column, we subtracted the column mean from each row of data and divided them by column standard deviation. We dropped any rows with NAs and started to fit different classification models.
 
-Fitting SVM
+### Fitting SVM
 
 The first model we used is Support Vector Machine(SVM), as we have little idea about the data, and as our goal is to find a linear separator between &quot;up&quot; stocks and &quot;down&quot; stocks, and SVM works relatively well at finding the linear separator.
 
@@ -126,7 +126,7 @@ From the model fitting result above, we were surprised to notice that no matter 
 
 <img src= "https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/final%20report%20img/PCA.png" width = "350">
 
-One-hot Encoding
+### One-hot Encoding
 
 As mentioned above, stocks in different industrial sectors may react to financial statement indicators differently, for example, the retail industry may focus on the free cash flow(liquidity) while the manufacturing industry is assumed to be affected largely by the profitability. We divided all companies into 11 sectors, and used one-hot encoding to generate new features for our model.
 
@@ -152,12 +152,12 @@ We concluded that with the new model, logistic regression was improved in terms 
 
 We fitted two logistic regression model with L1 and L2 regularizer respectively. We created two plots to see the change of accuracy:
 
-L1 regression:
+#### L1 regression:
 
 <img src= "https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/final%20report%20img/l1.png" width = "350">
 
 
-L2 regression:
+#### L2 regression:
 
 <img src= "https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/final%20report%20img/l2.png" width = "350">
 
