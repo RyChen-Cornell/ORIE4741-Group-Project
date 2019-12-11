@@ -138,15 +138,7 @@ Besides, we included more indicators from the financial statement as features. A
 
 The new accuracy comparison table is shown below: the green numbers mean that the accuracy decreases as the increase of feature numbers and the red numbers indicate that the model accuracy was improved.
 
-|   | Train accuracy  | Test Accuracy | F1 Score |
-| --- | --- | --- | --- |
-| Linear SVM | 60.98% | 60.48% | 0.7423 |
-| Non-Linear SVM | 62.12% | 60.43% | 0.7404 |
-| Random Forest | 54.44% | 53.18% | 0.5616 |
-| Logistic Regression | 61.14% | 60.67% | 0.7435 |
-| Neural Network | 62.08% | 60.18% | 0.7341 |
-| Ada Boost | 76.27% | 56.26% | 0.6686 |
-| XG Boost | 62.95% | 59.94% | 0.7406 |
+<img src= "https://github.com/RyChen-Cornell/ORIE4741-Group-Project/blob/master/final%20report%20img/table.png" width = "350">
 
 We concluded that with the new model, logistic regression was improved in terms of both train accuracy and test accuracy, and its test accuracy was the highest among all models, i.e. 60.67%. Based on that, we decided to dig deeper using logistic regression model to find optimal parameters.
 
